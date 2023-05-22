@@ -19,7 +19,7 @@ export default function Hero({ show, id }) {
       {show && (
         <button
           onClick={() => navigate("/apply/" + id)}
-          className="absolute top-[50%] hover:bg-black hover:animate-pulse hover:transition-all bg-red-600 px-6 py-2 rounded-sm text-white right-5 md:right-32"
+          className="absolute top-[50%] hover:bg-black hover:animate-pulse hover:transition-all bg-red-600 px-6 py-2 rounded-sm text-white right-5 md:right-32  mt-16  md:mt-0"
         >
           Apply Now
         </button>

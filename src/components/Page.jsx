@@ -24,6 +24,9 @@ export default function Page() {
   return (
     <div className="shadow mx-4 my-4 p-3">
       <div className="p-3  ">
+        <h1 className="text-2xl">{details?.title}</h1>
+      </div>
+      <div className="p-3  ">
         <p>{details?.description}</p>
       </div>
 

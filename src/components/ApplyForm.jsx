@@ -64,7 +64,7 @@ export default function ApplyForm() {
     setResumeFile(file);
   };
   return (
-    <div className="max-w-md mx-auto">
+    <div className="max-w-md mx-4 md:mx-auto">
       <h2 className="text-2xl font-bold mb-4 my-4">Apply here</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
