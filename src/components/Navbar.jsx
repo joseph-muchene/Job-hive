@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaEdit, FaUserAlt } from "react-icons/fa";
+import { GrClose } from "react-icons/gr";
 import { Link, useNavigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import getUserAuth from "../hooks";
@@ -23,7 +24,7 @@ export default function Navbar() {
               className="md:hidden absolute top-1.5 right-4"
               onClick={() => setShowNav(!showNav)}
             >
-              <FaBars />
+              {!showNav ? <FaBars /> : <GrClose />}
             </li>
             <div className={`${!showNav ? "hidden" : ""} md:block`}>
               <ul className=" flex flex-col  md:flex items-center md:space-x-4 md:flex-row ">
